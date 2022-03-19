@@ -3,7 +3,7 @@ from datetime import datetime
 from pytz import timezone
 
 
-def powerball(date=False):
+def powerball(date=None):
     count = 1
     result = []
     if not date:
@@ -28,7 +28,7 @@ def powerball(date=False):
     return result
 
 
-def powerladder(date=False):
+def powerladder(date=None):
     pb = powerball(date)
     result = []
     for r in pb:
